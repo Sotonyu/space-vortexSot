@@ -22,6 +22,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+using Content.Shared.Preferences;
 
 namespace Content.Shared.Humanoid;
 
@@ -108,6 +109,17 @@ public sealed partial class HumanoidAppearanceComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
     public Color? CachedFacialHairColor;
+
+    // CD - Character Records
+    /// <summary>
+    ///     The height of this humanoid.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float Height = 1f;
+    // CD - Character Records
+
+    // DeltaV - let paradox anomaly be cloned
+    public HumanoidCharacterProfile? LastProfileLoaded { get; set; }
 
     /// <summary>
     ///     Which layers of this humanoid that should be hidden on equipping a corresponding item..
