@@ -417,7 +417,9 @@ namespace Content.Server.Database
                 (PreferenceUnavailableMode) profile.PreferenceUnavailable,
                 antags.ToHashSet(),
                 traits.ToHashSet(),
-                loadouts
+                loadouts,
+                profile.CDProfile?.Height ?? 1.0f, // Vortex
+                profile.CDProfile?.Width ?? 1.0f // Vortex
             );
         }
 
@@ -468,6 +470,11 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait { TraitName = t })
             );
+
+            // Begin CD - Character Records
+            profile.CDProfile ??= new CDModel.CDProfile();
+            profile.CDProfile.Height = humanoid.Height;
+            profile.CDProfile.Width = humanoid.Width;
 
             profile.Loadouts.Clear();
 
