@@ -206,8 +206,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.SkinColor = sourceHumanoid.SkinColor;
         targetHumanoid.EyeColor = sourceHumanoid.EyeColor;
         targetHumanoid.Age = sourceHumanoid.Age;
-        targetHumanoid.Height = sourceHumanoid.Height; // Goobstation: port EE height/width sliders
-        targetHumanoid.Width = sourceHumanoid.Width; // Goobstation: port EE height/width sliders
+        targetHumanoid.Height = sourceHumanoid.Height; // Vortex - Height & Weight
+        targetHumanoid.Width = sourceHumanoid.Width; // Vortex - Height & Weight
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
         targetHumanoid.CustomBaseLayers = new(sourceHumanoid.CustomBaseLayers);
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
@@ -564,6 +564,8 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         humanoid.Age = profile.Age;
+        humanoid.Height = profile.Height; // Vortex - Height & Weight
+        humanoid.Width = profile.Width; // Vortex - Height & Weight
 
         // CorvaxGoob-Clearing
 /*        // begin Goobstation: port EE height/width sliders
