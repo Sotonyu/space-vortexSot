@@ -215,6 +215,7 @@
   - Psychologist
   - Paramedic
   - Surgeon # Corvax-Next-Surgeon
+  - Geneticist # Corvax-Wega-Genetics
 
 - type: department
   id: Security
