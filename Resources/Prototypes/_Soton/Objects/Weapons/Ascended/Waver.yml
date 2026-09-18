@@ -1,0 +1,37 @@
+- type: entity
+  name: Вейвер
+  parent: [BaseItem, BaseMagicalContraband]
+  description: Светлый духовный гипоспрей Фениции, озаряющий мир своей доброй энергией!
+  id: LumahypoWaver
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Hypo_feni.rsi
+    layers:
+      - state: hypo
+        map: ["enum.SolutionContainerLayers.Base"]
+      - state: hypo_fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    sprite: _Soton/Objects/Weapons/Ascended/Hypo_feni.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 100
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.5
+  - type: StaticPrice
+    price: 750000000
+  - type: StealTarget
+    stealGroup: Hypospray
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: hypo_fill
+    solutionName: hypospray

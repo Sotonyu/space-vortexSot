@@ -1,0 +1,17 @@
+- type: entity
+  name: Благодетель Истинной Надежды Божественности
+  parent: EnergySwordDouble
+  id: LumaeswordBlagodetel
+  description: Клинок, подаренный Звёздному Меченосцу и обрётший свою истинную суть...
+  components: # could add energy-draining like the L6C
+  - type: Wieldable
+    freeHandsRequired: 0 # because borg has no off-hand to wield with.  Without this, it will be unable to activate the esword
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Blagodetel.rsi
+    layers:
+      - state: e_sword_double
+      - state: e_sword_double_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]

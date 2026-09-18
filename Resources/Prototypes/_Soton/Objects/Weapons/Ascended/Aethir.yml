@@ -1,0 +1,46 @@
+- type: entity
+  name: Аэтир
+  parent: [BaseSword, BaseMagicalContraband]
+  id: LumabladeAethir
+  description: Багровый духовный друг Аки.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Aethir.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 20
+        Heat: 15
+        Holy: 20
+        Structural: 40
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: DamageOtherOnHit
+    ignoreResistances: true
+    damage:
+      types:
+        Slash: 15
+        Heat: 17
+        Holy: 20
+  - type: Item
+    sprite: _Soton/Objects/Weapons/Ascended/Aethir.rsi
+  - type: CargoSellBlacklist
+  - type: Tool
+    qualities:
+    - Slicing
+    - Prying
+  - type: Prying
+    pryPowered: true
+    speedModifier: 4
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: PointLight
+    radius: 4
+    energy: 1.6
+    color: "#bd1927"
+    castShadows: true
+  - type: Boomerang
+    maxHops: 10

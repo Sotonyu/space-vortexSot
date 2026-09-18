@@ -1,0 +1,26 @@
+- type: entity
+  parent: [BaseItem, BaseMagicalContraband]
+  id: JukeBoxMagic
+  name: волшебная шкатулка
+  description: Созданная сильным магом, эта шкатулка может играть любую музыку на свете.
+  components:
+  - type: Sprite
+    sprite: Objects/Fun/Instruments/musicbox.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: PointLight
+    enabled: true
+    netsync: true
+    radius: 4 #Excessively powerful
+    color: Gold
+  - type: ActivatableUI
+    key: enum.JukeboxUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.JukeboxUiKey.Key:
+          type: JukeboxBoundUserInterface
+  - type: Jukebox
+    onState: on
+    offState: off
+    selectState: select

@@ -1,0 +1,77 @@
+- type: entity
+  name: Терай
+  parent: [BaseMeleeWeaponEnergy, BaseMagicalContraband]
+  id: LumaeswordTerai
+  description: Волшебный двойной клинок особенного вознесенного. Один из духовных оружий.
+  components:
+  - type: ItemToggle
+    onUse: false # wielding events control it instead
+    onActivate: false # prevents the weapon from being able to be turned on when it is on the ground
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+      params:
+        volume: 3
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+      params:
+        volume: 3
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 3
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 15
+            Heat: 25
+            Holy: 25
+            Structural: 40
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: 3
+  - type: ComponentToggler
+    components:
+    - type: DisarmMalus
+      malus: 0.7
+    - type: Execution
+      doAfterDuration: 4.0
+    - type: Tool
+      qualities:
+      - Slicing
+      - Prying
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Wieldable
+    wieldSound: null # esword light sound instead
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1.5
+    angle: 100
+    damage:
+      types:
+        Blunt: 15
+  - type: DamageOtherOnHit
+    ignoreResistances: true
+    damage:
+      types:
+        Slash: 17
+        Heat: 15
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/e_sword_double.rsi
+    layers:
+      - state: e_sword_double
+      - state: e_sword_double_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Small
+    sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
+  - type: Reflect
+    reflectProb: .78
+    spread: 75

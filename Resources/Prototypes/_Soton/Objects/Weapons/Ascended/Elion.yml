@@ -1,0 +1,44 @@
+- type: entity
+  parent: [ WeaponCrusher, BaseMagicalContraband]
+  id: LumaglaiveElion
+  name: Элион
+  description: Великое оружие, прошедшее с хозяином множество испытаний! Духовное оружие Хранителя.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/CrusherglaiveHR.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _Soton/Objects/Weapons/Ascended/Crusherglaive-inhandsHR.rsi
+  - type: Clothing
+    sprite: _Soton/Objects/Weapons/Ascended/CrusherglaiveHR.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: UseDelay
+    delay: 1
+  - type: BasicEntityAmmoProvider
+    proto: BulletChargeGlaive
+    capacity: 1
+    count: 1
+  - type: LeechOnMarker
+    leech:
+      groups:
+        Brute: -5 # Lavaland Change: lower crusher healing
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: MeleeWeapon
+    attackRate: 1
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 7
+        Slash: 16
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 8
+        Slash: 20
+        Structural: 30

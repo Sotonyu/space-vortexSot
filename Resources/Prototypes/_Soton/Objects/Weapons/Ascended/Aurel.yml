@@ -1,0 +1,35 @@
+- type: entity
+  name: Аурель - Истинный клинок света
+  parent: [ BaseSword, BaseMagicalContraband ]
+  id: LumakatanaAurel
+  description: "Меч, сотканный из чистого света, который был создан Айросом. Истинное оружие божественности"
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Lightkatana.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Heat: 45
+        Asphyxiation: 5
+        Structural: 20
+        Holy: 100
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Melee/katana_storage_64x.rsi #Done in 64x64 because it looks way too puny in 32x32
+    shape:
+    - 0,0,0,3
+  - type: Clothing
+    sprite: Objects/Weapons/Melee/katana.rsi
+    slots:
+    - Back
+    - Belt
+  - type: DisarmMalus
+  - type: PointLight
+    radius: 6
+    energy: 1.5
+    softness: 52
+    color: "#FFD700FF"

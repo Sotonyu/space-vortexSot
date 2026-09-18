@@ -1,0 +1,50 @@
+- type: entity
+  name: Арбитр
+  parent: [ BaseWeaponPistol, BaseMagicalContraband ]
+  id: LumapistolArbitr
+  description: Этот пистолет — духовное оружие, несущее в себе вес ответственности и справедливости. Он словно живой страж, который выбирает своего владельца не по силе или амбициям, а по чистоте намерений и готовности нести правосудие без предвзятости. В руках Арбитр становится продолжением души, позволяя своему хозяину действовать решительно и бесшумно, словно тень, которая приходит и уходит, не оставляя следов. Тишина — его главный союзник. При выстреле Арбитр издаёт лишь едва слышимый шёпот, как будто сама ночь шепчет приговор. Это оружие не для шума и показухи, а для тех, кто понимает, что настоящая сила — в молчаливом решении и точности исполнения. Его патроны словно наполнены самой сутью судьбы, не оставляя шансов на ошибку.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Arbitr.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Soton/Objects/Weapons/Ascended/Arbitr.rsi
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -14
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: LumamagazineArbitr
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolCaselessRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeCaselessRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeCaselessRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 150000

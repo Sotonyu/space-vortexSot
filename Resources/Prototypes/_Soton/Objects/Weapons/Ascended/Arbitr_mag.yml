@@ -1,0 +1,27 @@
+- type: entity
+  id: LumamagazineArbitr
+  name: "магазин арбитра"
+  parent: BaseMagazinePistolCaselessRifle
+  description: Обойма идеально интегрирована с механизмом пистолета, обеспечивая молниеносную подачу патронов и бесшумную работу. Владельцу не нужно отвлекаться на смену магазина — он всегда готов к точному и решительному выстрелу.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessRifle
+    capacity: 10000000
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe

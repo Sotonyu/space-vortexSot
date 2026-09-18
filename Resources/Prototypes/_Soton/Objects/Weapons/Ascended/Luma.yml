@@ -1,0 +1,39 @@
+- type: entity
+  name: Люма
+  parent: [BaseSword, BaseMagicalContraband]
+  id: HolyLuma
+  description: Настоящий свет жизни сияет в твоей руке.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Luma.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _Soton/Objects/Weapons/Ascended/Luma.rsi
+  - type: MeleeWeapon
+    attackRate: 0.7
+    damage:
+      types:
+        Heat: 15
+        Slash: 5
+        Holy: 10
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+  - type: IgniteOnMeleeHit # emphasis on FLAMING GIFT!!
+    fireStacks: 0.25
+  - type: Tool
+    qualities:
+    - Prying
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: AlwaysHot
+  - type: Execution # It's not sharp per se, but who's against executing heretics with a giant flaming hand from god?
+    doAfterDuration: 4.0
+  - type: UseDelay
+    delay: 1
+  - type: Prying
+  - type: PointLight
+    radius: 5
+    energy: 2
+    color: "#f0d897"
+    castShadows: true

@@ -210,3 +210,14 @@
       emergencyLightColor: "#8A3324"
       forceEnableEmergencyLights: true
       shuttleTime: 600
+    enigma:
+      announcement: Тревога десятого уровня! Код Энигма! На станции обнаружено разрушающее влияние Бездны, угрожающее Вселенной. Экипажу приказано немедленно покинуть станцию и ждать подкрепления из Конфедерации Магов.
+       # CorvaxGoob-Change-Sound-Start
+      sound: /Audio/Announcements/Alerts/code_octarine.ogg
+      selectable: false
+      emagSelectable: true
+       # CorvaxGoob-Change-Sound-End
+      color: "#a0134e"
+      emergencyLightColor: "#a0134e"
+      forceEnableEmergencyLights: true
+      shuttleTime: 600
