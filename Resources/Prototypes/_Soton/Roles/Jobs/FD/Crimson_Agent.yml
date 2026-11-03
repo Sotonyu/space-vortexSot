@@ -1,0 +1,74 @@
+- type: job
+  id: AgentCrimsonLily
+  name: Агент Багровой Лилии
+  description: Станьте представителем Финансового Департамента и контролируйте все деньги станции.
+  playTimeTracker: JobAgentCrimsonLily
+  setPreference: true
+  weight: 20
+  startingGear: AgentCrimsonLilyGear
+  icon: "JobIconAgentCrimsonLily"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: финансовому департаменту
+  whitelisted: true
+  canBeAntag: false
+  skills:
+  - All
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 20
+  access:
+  - Security
+  - Brig
+  - External
+  - Cryogenics
+  - Maintenance
+  - Engineering
+  - Medical
+  - Research
+  - Command
+  - CentralCommand
+  - Service
+  - Cargo
+  - Salvage
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: AgentCrimsonLilyGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorMaroon
+    shoes: ClothingShoesBootsJackFilled
+    neck: ClothingNeckMantleCrimson
+    head: ClothingHeadHatBeretCrimson
+    eyes: ClothingEyesGlassesCentCommNoThermal
+    gloves: ClothingHandsGlovesCrimson
+    back: ClothingBackpackSatchelCentcomm
+    id: AgentCrimsonPDA
+    ears: ClothingHeadsetAltCentCom
+    pocket1: WeaponDisablerAdvanced
+    pocket2: AppraisalTool
+    underwearb: OnyxClothingUnderwearBottomBoxersWhite
+    outerClothing: ClothingOuterCoatCrimson
+  storage:
+    back:
+    - BoxSurvivalSlotsSecurity
+    - EmergencyNitrogenTankFilled
+    - TelescopicBaton
+    - BoxFolderCentComClipboard
+
+- type: entity
+  id: SpawnPointAgentCrimsonLily
+  parent: SpawnPointJobBase
+  name: Агент Багровой Лилии
+  components:
+  - type: SpawnPoint
+    job_id: AgentCrimsonLily
+  - type: Sprite
+    layers:
+      - state: green
+      - state: hos

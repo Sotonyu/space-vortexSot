@@ -1,0 +1,57 @@
+- type: entity
+  parent: BaseSecurityPDA
+  id: KnightPDA
+  name: КПК Рыцаря Звёздной Пыли
+  description: Этот особенный КПК сразу показывает что вы не обычный офицер.
+  components:
+  - type: Pda
+    id: KnightIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-hos
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#c9cc2b"
+  - type: Icon
+    state: pda-hos
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - WantedListCartridge
+    - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
+    - WalletCartridge # <Onyx Economy>
+
+- type: entity
+  parent: BaseSecurityPDA
+  id: AgentCrimsonPDA
+  name: КПК Агента Багровой Лилии
+  description: В этом КПК установлены лучшие программы для отслеживания рынка, расчета валют и контроля над деньгами.
+  components:
+  - type: Pda
+    id: AgentCrimsonIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-ert
+  - type: PdaBorderColor
+    borderColor: "#6b1713"
+    accentHColor: "#e3e647"
+  - type: Icon
+    state: pda-ert
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - WantedListCartridge
+    - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
+    - WalletCartridge # <Onyx Economy>

@@ -1,0 +1,68 @@
+- type: job
+  id: SecurityKnight
+  name: Рыцарь Звёздной Пыли
+  description: Войдите в роль доблестного экспериментального солдата НТ со своим напарником голопаразитом.
+  playTimeTracker: JobSecurityKnight
+  setPreference: true
+  weight: 20
+  startingGear: SecurityKnightGear
+  icon: "JobIconSecurityKnight"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  whitelisted: true
+  canBeAntag: false
+  skills:
+  - All
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 20
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Command
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: SecurityStaff
+
+- type: startingGear
+  id: SecurityKnightGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCaptain
+    shoes: ClothingShoesBootsJackFilled
+    head: ClothingHeadHatKnight
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackDuffelSecurity
+    id: KnightPDA
+    ears: ClothingHeadsetAltWarden
+    pocket1: WeaponPistolMk58
+    pocket2: HoloprojectorSecurity
+    underwearb: OnyxClothingUnderwearBottomBoxersWhite
+    outerClothing: ClothingOuterCoatKnight
+  storage:
+    back:
+    - BoxSurvivalSlotsSecurity
+    - CombatKnife
+    - EmergencyNitrogenTankFilled
+    - TelescopicBaton
+    - BoxHoloparasiteKnight
+
+- type: entity
+  id: SpawnPointSecurityKnight
+  parent: SpawnPointJobBase
+  name: Рыцарь Звёздной Пыли
+  components:
+  - type: SpawnPoint
+    job_id: SecurityKnight
+  - type: Sprite
+    layers:
+      - state: green
+      - state: hos

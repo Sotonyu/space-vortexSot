@@ -1,0 +1,15 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSecurityKnight
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: SecurityKnight
+  jobName: Рыцарь Звёздной Пыли
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconAgentCrimsonLily
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: AgentCrimsonLily
+  jobName: Агент Багровой Лилии

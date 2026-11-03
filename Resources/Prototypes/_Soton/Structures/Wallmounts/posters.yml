@@ -1,0 +1,74 @@
+- type: entity
+  parent: PosterBase
+  id: PosterLegitDS1
+  name: Dark Station
+  description: Это старое приглашение на работу в дальний "Тёмный" сектор. Он вызывает у вас приступ ностальгии?
+  components:
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Soton/Structures/Wallmounts/Posters.rsi
+    state: posterDS1
+    snapCardinals: true
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterLegitDS2
+  name: тёмные буквы!
+  description: Кажется, это постер созданный к празднику в Тёмном секторе.
+  components:
+  - type: Sprite
+    state: posterDS2
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterLegitDS1984
+  name: Агитационный плакат
+  description: Прям как в 1984!
+  components:
+  - type: Sprite
+    state: posterDS3
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterLegitDS3
+  name: Тёмный торт
+  description: Здесь нарисован вкусный торт с Тёмным шоколадом внутри.
+  components:
+  - type: Sprite
+    state: posterDS4
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterContrabandCitadel1
+  name: Новый порядок
+  description: Похоже, это национальный плакат какого-то государства.
+  components:
+  - type: Sprite
+    state: cit1
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterContrabandCitadel2
+  name: Революционный плакат
+  description: Вива! Вставай народ! Мы свергнем тиранов!
+  components:
+  - type: Sprite
+    state: cit2
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterContrabandCitadel3
+  name: Цитадель
+  description: Здесь указаны события гражданской войны на какой-то планете. Снизу написано "За альянс".
+  components:
+  - type: Sprite
+    state: cit3
+
+- type: entity
+  parent: PosterLegitDS1
+  id: PosterContrabandCitadel4
+  name: Северный Альянс
+  description: Мы боремся за свободу! Новый порядок ждет крах! Кажется, это очень активное сопротивление.
+  components:
+  - type: Sprite
+    state: cit4

@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleCrimson
+  name: Мантия Багровой Лилии
+  description: Очень дорогая мантия, которую носят только самые важные агенты Финансового Департамента.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/Crimson_lily.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleISB
+  name: Мантия инструктора
+  description: Красивая мантия, в которой по слухам легче обучать кадетов.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/Isbmantle.rsi

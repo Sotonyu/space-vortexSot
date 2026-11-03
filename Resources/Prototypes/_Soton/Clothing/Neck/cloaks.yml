@@ -1,0 +1,76 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakArbitr
+  name: Плащ Арбитра
+  description: Этот изысканный плащ показывает статус его владельца.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/Arbitr.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakEUG
+  name: Плащ ОПЗ
+  description: Выдается только самым важным людям в государстве.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/Eug_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleNanorepDark
+  name: антикварный плащ ПНТ
+  description: Плащ для великого ПНТ, изготовленный на заказ. Кажется, от него исходит аура управления.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/PNT_mantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCentcomChief
+  name: Плащ НШЦК
+  description: Его носят только самые влиятельные и серьезные.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/Neck/Chief_cloak.rsi
+
+- type: entity
+  parent: [ClothingNeckBase, BaseMagicalContraband]
+  id: ClothingNeckEnsembleDarkIce
+  name: Плащ Тёмного льда
+  description: Он соткан из самой стужи и теней, что веками копились у подножия Ледяного Трона. Его края неровны, будто разорваны ледяным ветром, а каждый изгиб напоминает застывший вихрь. Когда Лепесток делает шаг, плащ не просто развевается — он будто стелется по земле, вытягивая тепло из воздуха и оставляя за собой тонкую корку инея.
+  components:
+  - type: Item
+    size: Small
+    heldPrefix: both
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Sprite
+    sprite: _Soton/Clothing/Neck/Dark_ice_cloak.rsi
+  - type: Clothing
+    sprite: _Soton/Clothing/Neck/Dark_ice_cloak.rsi
+    equippedPrefix: both
+    slots:
+    - Neck
+  - type: ItemSwitch
+    state: both
+    showLabel: true
+    states:
+      both: !type:ItemSwitchState
+        verb: both
+        sprite:
+          sprite: _Soton/Clothing/Neck/Dark_ice_cloak.rsi
+          state: icon
+      mantle: !type:ItemSwitchState
+        verb: mantle
+        sprite:
+          sprite: _Soton/Clothing/Neck/Dark_ice_cloak.rsi
+          state: mantle-icon
+      cloak: !type:ItemSwitchState
+        verb: cloak
+        sprite:
+          sprite: _Soton/Clothing/Neck/Dark_ice_cloak.rsi
+          state: cloak-icon

@@ -1,0 +1,46 @@
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: ClothingOuterCoatKnight
+  name: Пальто Рыцаря Звёздной Пыли
+  description: Поистине легендарное пальто великого бойца, оно производится только по специальному заказу в Тёмном секторе. С ним вы наполняете силой Биззарности.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/OuterClothing/Security_knight.rsi
+    - type: Clothing
+      sprite: _Soton/Clothing/OuterClothing/Security_knight.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.4
+          Heat: 0.7
+
+- type: entity
+  id: ClothingOuterCoatAdministrator
+  parent: ClothingOuterStorageBase
+  name: Пальто администратора
+  description: Довольно теплое пальто, в нём удобно заниматься твоей любимой бюрократией.
+  components:
+  - type: Sprite
+    sprite: _Soton/Clothing/OuterClothing/Administrator_coat.rsi
+  - type: Clothing
+    sprite: _Soton/Clothing/OuterClothing/Administrator_coat.rsi
+
+- type: entity
+  parent: ClothingOuterCoatHoSTrench
+  id: ClothingOuterCoatCrimson
+  name: Бронекуртка Багровой Лилии
+  description: В этой куртке сразу понятно, что владелец не просто работник. Эта бронекуртка сшита из лучшей дюраткани и используется только в пределах Финансового Департамента.
+  components:
+    - type: Sprite
+      sprite: _Soton/Clothing/OuterClothing/Crimson_lily.rsi
+    - type: Clothing
+      sprite: _Soton/Clothing/OuterClothing/Crimson_lily.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.4
+          Heat: 0.5

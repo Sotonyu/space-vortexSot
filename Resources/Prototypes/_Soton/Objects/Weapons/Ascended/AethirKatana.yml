@@ -1,0 +1,99 @@
+- type: entity
+  parent: [BaseSword, BaseMagicalContraband]
+  id: LumakatanaAethir
+  name: Аэтир
+  description: Старый-добрый багровый друг Аки. Вместе они изменят мир..
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Ascended/Aethirkatana.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Soton/Objects/Weapons/Ascended/Aethirkatana.rsi
+    slots:
+    - Back
+    - Belt
+  - type: MeleeWeapon
+    wideAnimationRotation: -60
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 15
+        Structural: 50
+        Blunt: 10
+      woundSeverityMultipliers:
+        Slash: 2
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Execution
+    doAfterDuration: 4.0
+  - type: Item
+    sprite: _Soton/Objects/Weapons/Ascended/Aethirkatana.rsi
+  - type: ItemSwitch
+    needsPower: false
+    defaultState: off
+    state: "off"
+    showLabel: true
+    states:
+      off: !type:ItemSwitchState
+        verb: off
+        energyPerUse: 0
+        sprite:
+          sprite: _Soton/Objects/Weapons/Ascended/Aethirkatana.rsi
+          state: icon
+        components:
+        - type: MeleeWeapon
+          wideAnimationRotation: -60
+          attackRate: 1.5
+          damage:
+            types:
+              Slash: 15
+              Structural: 50
+              Blunt: 10
+          angle: 60
+          animation: WeaponArcThrust
+          soundHit:
+            path: /Audio/Weapons/bladeslice.ogg
+        - type: StaminaDamageOnHit
+          damage: 35
+          overtime: 15
+        soundStateActivate:
+          collection: sparks
+          params:
+            variation: 0.250
+
+      powered: !type:ItemSwitchState
+        verb: powered
+        energyPerUse: 0
+        sprite:
+          sprite: _Soton/Objects/Weapons/Ascended/Aethirkatana.rsi
+          state: powered-icon
+        components:
+        - type: PointLight
+          radius: 6
+          energy: 3
+          color: "#bd1927"
+          castShadows: true
+        - type: Execution
+          doAfterDuration: 4.0
+        - type: IgniteOnMeleeHit
+          fireStacks: 5
+        - type: Reflect
+          reflectProb: .70
+          reflects:
+            - Energy
+            - NonEnergy
+        - type: MeleeWeapon
+          wideAnimationRotation: -60
+          attackRate: 1.5
+          damage:
+            types:
+              Slash: 20
+              Heat: 35
+          angle: 60
+          animation: WeaponArcThrust
+          soundHit:
+            path: /Audio/_Goobstation/Weapons/Effects/energy-short-sword-swing.ogg
+        soundStateActivate:
+          collection: sparks
+          params:
+            variation: 0.250

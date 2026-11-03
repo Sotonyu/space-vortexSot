@@ -1,0 +1,68 @@
+- type: entity
+  parent: [FlaskBase, DrinkFlaskVisualsOpenable, BaseMagicalContraband]
+  id: InfiniteflaskCognac
+  name: Бесконечная фляга
+  description: Загадочная фляга, создающая бесконечную выпивку с помощью энергии Бездны.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/hosflask.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Cognac
+          Quantity: 50
+  - type: SolutionRegeneration
+    solution: drink
+    duration: 10
+    generated:
+      reagents:
+      - ReagentId: Cognac
+        Quantity: 10
+
+- type: entity
+  parent: [FlaskBase, DrinkFlaskVisualsOpenable, BaseMagicalContraband]
+  id: InfiniteflaskLuma
+  name: Светлая фляга
+  description: Красивая и блестящая фляга из люма-стали. На ней нарисован символ золотой звезды.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/shinyflask.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 150
+        reagents:
+        - ReagentId: LumaEssence
+          Quantity: 150
+  - type: SolutionRegeneration
+    solution: drink
+    duration: 10
+    generated:
+      reagents:
+      - ReagentId: LumaEssence
+        Quantity: 10
+
+- type: entity
+  parent: [FlaskBase, DrinkFlaskVisualsOpenable, BaseMagicalContraband]
+  id: InfiniteflaskTea
+  name: Волшебный термос
+  description: Отличный термос, зачарованный с помощью магии. Бесконечно создает и подогревает чай.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/vacuumflask.rsi
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: Tea
+          Quantity: 100
+  - type: SolutionRegeneration
+    solution: drink
+    duration: 10
+    generated:
+      reagents:
+      - ReagentId: Tea
+        Quantity: 10

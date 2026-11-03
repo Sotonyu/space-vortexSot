@@ -1,0 +1,26 @@
+- type: entity
+  name: Инжектор голопаразита Звёздной Пыли
+  id: HoloparasiteInjectorKnight
+  parent: BaseItem
+  description: После долгих и упорных попыток воссоздать технологию Синдиката, НТ все-же удалось это сделать. Это чудо технологий твердого света позволяет обрести товарища и защитника в лице Голопаразита.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    state: combat_hypo
+  - type: GuardianCreator
+    guardianProto: MobGuardianSecurity
+
+- type: entity
+  name: Коробка с голопаразитом Звёздной Пыли
+  parent: BoxCardboard
+  id: BoxHoloparasiteKnight
+  description: Коробка, с необходимым оборудованием Рыцаря Звёздной Пыли.
+  components:
+  - type: StorageFill
+    contents:
+      - id: HoloparasiteInjectorKnight
+      - id: HoloparasiteInfo
+  - type: Sprite
+    layers:
+      - state: box
+      - state: holo

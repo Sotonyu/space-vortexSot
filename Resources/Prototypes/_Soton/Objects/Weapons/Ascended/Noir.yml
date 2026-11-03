@@ -1,0 +1,39 @@
+- type: entity
+  name: Нойр
+  parent: [BaseSword, BaseMagicalContraband]
+  id: LumabladeNoir
+  description: Этот острый клинок олицетворяет стойкость и храбрость своего владельца. Один из духовных оружий, принадлежит Рейну.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -125
+    damage:
+      types:
+        Slash: 10
+        Heat: 15
+        Holy: 20
+        Structural: 15
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    sprite: _Goobstation/Heretic/Blades/eldritch_blade-inhands.rsi
+  - type: CargoSellBlacklist
+  - type: Tool
+    qualities:
+    - Slicing
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: PointLight
+    radius: 4
+    energy: 1.6
+    color: "#3094d6"
+    castShadows: true
+  - type: SpacetimeSpellbladeEnchantment
+  - type: Reflect
+    reflectProb: .55
+    reflects:
+      - Energy
+      - NonEnergy

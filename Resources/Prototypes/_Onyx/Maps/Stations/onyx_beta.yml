@@ -19,6 +19,7 @@
             #service
             Captain: [ 1, 1 ]
             NanotrasenRepresentative: [ 1, 1 ]
+            AgentCrimsonLily: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 2, 2 ]
@@ -48,6 +49,7 @@
             ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SecurityKnight: [ 1, 1 ]
             Warden: [ 1, 1 ]
             WardenHelper: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]

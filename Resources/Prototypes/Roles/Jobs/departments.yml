@@ -137,6 +137,14 @@
   - PartyMaker # event-restricted, Goobstation
 
 - type: department
+  id: FinDep
+  name: Финансовый Департамент
+  description: Инспектируйте станцию, контролируйте отдел снабжения и следите за расходами и доходами станции.
+  color: "#971313"
+  roles:
+  - AgentCrimsonLily
+
+- type: department
   id: CentralCommand
   name: department-CentralCommand
   description: department-CentralCommand-description
@@ -230,6 +238,7 @@
   - SecurityCadet
   - SecurityOfficer
   - Detective
+  - SecurityKnight
   - Warden
   - Brigmedic # Goob
   - Pilot # Corvax-Pilot

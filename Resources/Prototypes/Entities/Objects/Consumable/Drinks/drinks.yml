@@ -2680,6 +2680,70 @@
 
 - type: entity
   parent: DrinkGlass
+  id: OilyOafGlass
+  suffix: Жирный олух
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: OilyOaf
+          Quantity: 30
+  - type: Icon
+    sprite: _Soton/Objects/Consumables/Drinks/Oilyoaf.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: BlackoutStoutGlass
+  suffix: Сногсшибательный стаут
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BlackoutStout
+          Quantity: 30
+  - type: Icon
+    sprite: _Soton/Objects/Consumables/Drinks/Blackoutstout.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: ArkenStoutGlass
+  suffix: Замороженный стаут
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ArkenStout
+          Quantity: 30
+  - type: Icon
+    sprite: _Soton/Objects/Consumables/Drinks/Arkenstout.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSilverhand
+  suffix: Сильверхенд
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Silverhand
+              Quantity: 30
+    - type: Icon
+      sprite: Objects/Consumable/Drinks/the_martinez.rsi
+      state: icon
+
+- type: entity
+  parent: DrinkGlass
   id: DrinkCaipirinha
   suffix: caipirinha
   components:

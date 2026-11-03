@@ -1,0 +1,30 @@
+- type: entity
+  id: MobGuardianSecurity
+  parent: MobGuardianBase
+  name: Голопаразит Рыцаря Звёздной Пыли
+  description: Экспериментальная разработка NanoTrasen, когда-то забытая, но недавно вернувшаяся.. Их делают только в одном секторе, а потом выдают лучшим агентам СБ.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Soton/Mobs/Guardian_security.rsi
+    netsync: false
+    layers:
+    - state: star
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - enum.DamageStateVisualLayers.Base:
+        star: ""
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: true
+    makeSentient: true
+    name: Голопаразит рыцаря звездной пыли
+    description: Вы - экспериментальная разработка реверс-инженеринга НТ. Выполняйте приказы своего хозяина.
+    rules: ghost-role-information-familiar-rules
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: NameIdentifier
+    group: Holoparasite

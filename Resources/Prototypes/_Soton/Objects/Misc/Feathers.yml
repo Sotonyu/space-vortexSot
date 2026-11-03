@@ -1,0 +1,142 @@
+- type: entity
+  id: FeatherOfBalance
+  parent: BaseItem
+  name: Перо Баланса
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Баланса, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-balance.rsi
+    state: quill-balance
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfDarkness
+  parent: BaseItem
+  name: Перо Тьмы
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Тьмы, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-darkness.rsi
+    state: quill-darkness
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfFate
+  parent: BaseItem
+  name: Перо Судьбы
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Судьбы, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-fate.rsi
+    state: quill-fate
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfHope
+  parent: BaseItem
+  name: Перо Надежды
+  description: Особое перо, созданное героем свободы. Это управляет новым аспектом Надежды, и делает то, что не могут другие.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-hope.rsi
+    state: quill-hope
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfLife
+  parent: BaseItem
+  name: Перо Жизни
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Жизни, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-life.rsi
+    state: quill-life
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfLight
+  parent: BaseItem
+  name: Перо Света
+  description: Одно из великих Перьев Реальности, созданное великим богом Света. Это управляет аспектом Света, и освещает путь во тьме Бездны.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-light.rsi
+    state: quill-light
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfLuck
+  parent: BaseItem
+  name: Перо Удачи
+  description: Одно из великих Перьев Реальности, созданное из части древней богини Удачи. Это управляет аспектом Удачи, и прокладывает дорогу в непредсказуемом мире.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-luck.rsi
+    state: quill-luck
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfMind
+  parent: BaseItem
+  name: Перо Разума
+  description: Одно из великих Перьев Реальности, стремящееся собрать и объединить все знания. Это управляет аспектом Разума, и делится знаниями с желающими.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-mind.rsi
+    state: quill-mind
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfReality
+  parent: BaseItem
+  name: Перо Реальности
+  description: Это великое перо, созданное из всех перьев аспектов. Это управляет всей Реальностью , и может практически все.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-reality.rsi
+    state: quill-reality
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfSoul
+  parent: BaseItem
+  name: Перо Души
+  description: Одно из великих Перьев Реальности, и контролирует души существ Вселенной. Это управляет аспектом Души, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-soul.rsi
+    state: quill-soul
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfSpace
+  parent: BaseItem
+  name: Перо Пространства
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Пространства, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-space.rsi
+    state: quill-space
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfTime
+  parent: BaseItem
+  name: Перо Времени
+  description: Одно из великих Перьев Реальности, соединяя ветви времени. Это управляет аспектом Времени, и может изменять его.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-time.rsi
+    state: quill-time
+    drawdepth: Items
+
+- type: entity
+  id: FeatherOfTruth
+  parent: BaseItem
+  name: Перо Истины
+  description: Одно из великих Перьев Реальности. Это управляет аспектом Истины, и может почти все.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Aspects/quills/quill-truth.rsi
+    state: quill-truth
+    drawdepth: Items

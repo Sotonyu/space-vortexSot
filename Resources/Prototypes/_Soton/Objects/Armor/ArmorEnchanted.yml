@@ -1,0 +1,96 @@
+- type: entity
+  parent: [ ClothingOuterStorageToggleableBase, AllowSuitStorageClothing, BaseMagicalContraband ]
+  id: ClothingArmorEnchantedLuma
+  name: Светлый доспех
+  description: Волшебный доспех, созданный с помощью загадочной энергии Люмы и Орифа, может поглощать физические и магические атаки.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/cosmos_armor.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Goobstation/Heretic/Clothing/OuterClothing/cosmos_armor.rsi
+  - type: Armor
+    coverage:
+    - Chest
+    - Groin
+    - Arm
+    - Hand
+    - Leg
+    - Foot
+    - Tail
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Heat: 0
+        Caustic: 0.25
+        Radiation: 0.15
+    traumaDeductions:
+      Dismemberment: 0.5
+      OrganDamage: 0.5
+      BoneDamage: 0.5
+      VeinsDamage: 0.0
+      NerveDamage: 0.0
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ToggleableClothing # Goobstation - Modsuits change
+    clothingPrototypes:
+      head: ClothingHeadArmorEnchantedLuma
+  - type: ModifyDelayedKnockdown
+    delayDelta: 3
+    knockdownTimeDelta: -3
+  - type: StaminaResistance
+    damageCoefficient: 0.7
+  - type: HideClothingLayerClothing
+    hiddenSlots:
+    - jumpsuit
+  - type: FireProtection
+    reduction: 0.8
+  - type: TemperatureProtection
+    heatingCoefficient: 0.3
+    coolingCoefficient: 0.3
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: WizardClothes
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseMagicalContraband ]
+  id: ClothingHeadArmorEnchantedLuma
+  name: Светлый капюшон
+  description: Легкий, но прочный капюшон, выкованный Орифом. Ярко светится в темноте.
+  components:
+  - type: Sprite
+    sprite: _CorvaxGoob/Clothing/Head/HereticHoods/void_hood.rsi
+    state: icon
+  - type: Clothing
+    sprite: _CorvaxGoob/Clothing/Head/HereticHoods/void_hood.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: FlashImmunity
+  - type: FlashSoundSuppression
+  - type: Armor
+    coverage:
+    - Head
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Heat: 0
+        Caustic: 0.25
+    traumaDeductions:
+      Dismemberment: 0.5
+      OrganDamage: 0.5
+      BoneDamage: 0.5
+      VeinsDamage: 0.0
+      NerveDamage: 0.0
+  - type: FireProtection
+    reduction: 0.7
+  - type: FaceHuggerBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: WizardClothes
