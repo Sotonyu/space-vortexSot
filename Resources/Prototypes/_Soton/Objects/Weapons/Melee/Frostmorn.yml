@@ -1,0 +1,66 @@
+- type: entity
+  name: Фростморн
+  parent: [BaseSword, BaseMagicalContraband]
+  id: LumabladeFrostmorn
+  description: Ледяной меч, второе обличие духовного друга Лепестка Нестерова... Его лезвие пронизано призрачными рунами, а холод вокруг него будто вытягивает жизнь из всего живого.
+  components:
+  - type: Item
+    size: Large
+  - type: Gun
+    soundGunshot: /Audio/Effects/radpulse7.ogg
+    fireRate: 0.5
+    useKey: false
+  - type: GunRequiresWield
+  - type: MeleeWeapon
+    animationRotation: -45
+    wideAnimationRotation: -135
+    attackRate: 0.8
+    damage:
+      types:
+        Slash: 25
+        Cold: 15
+        Structural: 50
+        Holy: 35
+      woundSeverityMultipliers:
+        Slash: 2.5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Wieldable
+  - type: Clothing
+    sprite: _Soton/Objects/Weapons/Melee/Frostmorn.rsi
+    slots:
+    - Back
+    - SuitStorage
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Melee/Frostmorn.rsi # Todo - Give this proper wielded sprites.
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 3.5
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3.4
+    rechargeSound:
+      path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ProjectileIceCubeBolt
+    capacity: 2
+    count: 2
+  - type: Sharp
+  - type: Execution # OFF WITH HIS HEAD!!
+    doAfterDuration: 3.0
+  - type: Scalpel
+    speed: 0.25
+  - type: BoneSaw # You can't tell me this isn't hilarious.
+    speed: 0.6 # Chaplain preforming surgery with a COMICALLY LARGE CLAYMORE
+  - type: Tool
+    qualities:
+      - Slicing
+    useSound:
+      path: /Audio/Items/Culinary/chop.ogg
+  - type: ChangeTemperatureOnHit
+    heat: -100000
+  - type: PointLight
+    radius: 4
+    energy: 2
+    color: "#424ac2"
+    castShadows: true

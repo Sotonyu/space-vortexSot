@@ -44,3 +44,8 @@
     castShadows: true
   - type: Boomerang
     maxHops: 10
+  - type: Reflect
+    reflectProb: .60
+    reflects:
+      - Energy
+      - NonEnergy

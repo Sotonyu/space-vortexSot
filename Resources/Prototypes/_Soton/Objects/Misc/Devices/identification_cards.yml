@@ -1,0 +1,23 @@
+- type: entity
+  parent: IDCardStandard
+  id: KnightIDCard
+  name: ID-карта Рыцаря Звёздной Пыли
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+        - state: idwarden
+    - type: PresetIdCard
+      job: SecurityKnight
+
+- type: entity
+  parent: IDCardStandard
+  id: AgentCrimsonIDCard
+  name: ID-карта Агента Багровой Лилии
+  components:
+    - type: Sprite
+      layers:
+        - state: centcom
+        - state: idcentcom
+    - type: PresetIdCard
+      job: AgentCrimsonLily

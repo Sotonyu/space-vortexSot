@@ -17,7 +17,11 @@ on:
       - synchronize
       - reopened
       - ready_for_review
+<<<<<<< HEAD
+
+=======
       
+>>>>>>> origin/master
 permissions:
   pull-requests: write
   issues: write

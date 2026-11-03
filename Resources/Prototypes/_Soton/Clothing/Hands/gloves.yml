@@ -1,0 +1,20 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesCrimson
+  name: Перчатки Агента Багровой Лилии
+  description: Данные перчатки не только очень красивые, но еще и очень удобные, позволяют эффективно заниматься инспекцией станции.
+  components:
+  - type: Sprite
+    sprite: _Soton/Clothing/Hands/Crimson_lily.rsi
+  - type: Clothing
+    sprite: _Soton/Clothing/Hands/Crimson_lily.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: Armor # Goob
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Shock: 0.75

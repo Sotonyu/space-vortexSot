@@ -117,6 +117,7 @@
             #command
             Captain: [ 1, 1 ]
             NanotrasenRepresentative: [ 1, 1 ]
+            AgentCrimsonLily: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             #service
             HeadOfPersonnel: [ 1, 1 ]
@@ -145,6 +146,7 @@
             ResearchAssistant: [ 2, 2 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SecurityKnight: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 6, 6 ]
             SecurityCadet: [ 3, 3 ]

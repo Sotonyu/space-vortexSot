@@ -20,6 +20,7 @@
             #command
             Captain: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
+            AgentCrimsonLily: [ 1, 1 ]
             NanotrasenRepresentative: [ 1, 1 ]
             #service
             HeadOfPersonnel: [ 1, 1 ]
@@ -48,6 +49,7 @@
             Roboticist: [ 1, 1 ]
             #security
             HeadOfSecurity: [ 1, 1 ]
+            SecurityKnight: [ 1, 1 ]
             Warden: [ 1, 1 ]
             WardenHelper: [ 1, 1 ]
             Detective: [ 1, 1 ]

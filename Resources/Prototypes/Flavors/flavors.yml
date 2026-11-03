@@ -700,6 +700,26 @@
   description: flavor-complex-xeno-basher
 
 - type: flavor
+  id: oilyoaf
+  flavorType: Complex
+  description: как добыча моркита
+
+- type: flavor
+  id: arkenstout
+  flavorType: Complex
+  description: как снежная могила
+
+- type: flavor
+  id: blackoutstout
+  flavorType: Complex
+  description: как становление дворфом
+
+- type: flavor
+  id: silverhand
+  flavorType: Complex
+  description: как восстание против корпораций
+
+- type: flavor
   id: irishbool
   flavorType: Complex
   description: flavor-complex-irish-bool

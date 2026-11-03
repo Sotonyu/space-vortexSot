@@ -12,8 +12,8 @@
     damage:
       types:
         Slash: 20
-        Heat: 15
-        Holy: 20
+        Heat: 20
+        Holy: 25
         Structural: 40
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
@@ -39,8 +39,13 @@
     - Pickaxe
   - type: PointLight
     radius: 4
-    energy: 1.6
+    energy: 2
     color: "#bd1927"
     castShadows: true
   - type: Boomerang
     maxHops: 10
+  - type: Reflect
+    reflectProb: .60
+    reflects:
+      - Energy
+      - NonEnergy

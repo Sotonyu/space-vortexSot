@@ -1,0 +1,123 @@
+- type: reagent
+  id: OilyOaf
+  name: Жирный олух
+  parent: BaseAlcohol
+  desc: Жирный Олух. Любимое пиво Дворфов. Это один из легендарных напитков дальних секторов. Смесь богатого, горьковатого послевкусия вместе с низкой ценой означают то, что Олух всегда будет в изобилии. Скала и Камень!
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: oilyoaf
+  color: "#a75729"
+  metamorphicSprite:
+    sprite: _Soton/Objects/Consumables/Drinks/Oilyoaf.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 2
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.15
+        - !type:AdjustReagent
+          reagent: Beer
+          amount: 0.05
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
+          type: Remove
+  fizziness: 0.15
+
+- type: reagent
+  id: BlackoutStout
+  name: Сногсшибательный стаут
+  parent: BaseAlcohol
+  desc: Кружка Сшибающего Стаута, известного по всему космосу, способна вырубить практически любого. Истинное испытание для истинного алкаша.
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: blackoutstout
+  color: "#1c1b49"
+  metamorphicSprite:
+    sprite: _Soton/Objects/Consumables/Drinks/Blackoutstout.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 2
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.65
+        - !type:AdjustReagent
+          reagent: BacchusBlessing
+          amount: 0.15
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
+          type: Remove
+  fizziness: 0.55
+
+- type: reagent
+  id: ArkenStout
+  name: Замороженный стаут
+  parent: BaseAlcohol
+  desc: Древний рецепт тысячелетней давности, найденный на островах звёздного сияния. У него прекрасный вкус чести, золота и славных дней. Лучше всего подавать охлажденным почти до абсолютного нуля.
+  physicalDesc: reagent-physical-desc-fizzy-and-creamy
+  flavor: arkenstout
+  color: "#2797b9"
+  metamorphicSprite:
+    sprite: _Soton/Objects/Consumables/Drinks/Arkenstout.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 2
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.20
+        - !type:AdjustReagent
+          reagent: FrostOil
+          amount: 0.05
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
+          type: Remove
+  fizziness: 0.20
+
+- type: reagent
+  id: Silverhand
+  name: Сильверхенд
+  parent: BaseAlcohol
+  desc: Самый бунтарский напиток во всем космосе! В его неповторимом вкусе есть горькие нотки пива и текилы, и их дополняет вкус перца чили.
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: silverhand
+  color: "#38626e"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/the_martinez.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+        - !type:SatiateThirst
+          factor: 2
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.10
+        - !type:AdjustReagent
+          reagent: Stimulants
+          amount: 0.05
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
+          type: Remove
+  fizziness: 0.20

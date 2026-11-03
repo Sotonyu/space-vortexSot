@@ -1,0 +1,43 @@
+- type: entity
+  parent: [ BaseItem, BaseMagicalContraband ]
+  id: LumapistolStalin
+  name: Сталин
+  description: Волшебный револьвер Роммеля, создающий патроны внутри себя и продвигающий дух социализма. Одно из "Духовных оружий".
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: Gun
+    fireRate: 3
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletCaselessRifle
+    capacity: 15
+    count: 15
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3
+    rechargeSound:
+      path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
+  - type: AmmoCounter
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container

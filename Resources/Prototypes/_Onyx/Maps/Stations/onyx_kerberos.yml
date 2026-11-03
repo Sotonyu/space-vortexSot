@@ -22,6 +22,7 @@
             # command
             Captain: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
+            AgentCrimsonLily: [ 1, 1 ]
             NanotrasenRepresentative: [ 1, 1 ]
             # cargo
             Quartermaster: [ 1, 1 ]
@@ -49,6 +50,7 @@
             ResearchAssistant: [ 3, 3 ]
             # security
             HeadOfSecurity: [ 1, 1 ]
+            SecurityKnight: [ 1, 1 ]
             Warden: [ 1, 1 ]
             WardenHelper: [ 1, 1 ]
             SecurityOfficer: [ 5, 6 ]

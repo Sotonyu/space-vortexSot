@@ -1,0 +1,98 @@
+- type: entity
+  name: тёмный клинок
+  parent: [BaseMeleeWeaponEnergy, BaseMagicalContraband]
+  id: DarkSaber
+  description: Загадочное древнее оружие с клинком из тёмной материи. Режет ткань реальности как масло.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Weapons/Melee/DarkSaber/icon.rsi
+    layers:
+    - state: e_sword
+    - state: e_sword_blade
+      color: "#e2e2d8"
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Soton/Misc/DarkSaber/darksaber1.ogg
+    soundDeactivate:
+      path: /Audio/_Soton/Misc/DarkSaber/darksaber2.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: -6
+  - type: ToggleableVisuals # Add support for multiple layers
+    spriteLayer: blade
+    inhandVisuals:
+      left:
+      - state: inhand-left-blade
+        shader: unshaded
+      right:
+      - state: inhand-right-blade
+        shader: unshaded
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/_Soton/Misc/DarkSaber/darksaber3.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/_Soton/Misc/DarkSaber/darksaber3.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+      types:
+        Slash: 17
+        Heat: 18
+        Radiation: 5
+        Structural: 30
+        Holy: 10
+  - type: Item
+    sprite: _Soton/Objects/Weapons/Melee/DarkSaber/inhands.rsi
+  - type: ThrowableBlocker # Goobstation
+    blockSound:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -2
+  - type: Reflect
+    reflectProb: .55
+    reflects:
+      - Energy
+      - NonEnergy
+  - type: Sharp
+  - type: Execution # Off with his head!
+    doAfterDuration: 4.0
+  - type: Tag
+    tags:
+    - DarkSaber
+  - type: UndetectableContraband
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    ignoreResistances: true
+    damage:
+      types:
+        Slash: 10
+        Piercing: 15
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.475,-0.225
+          - -0.225,-0.475
+          - 0.525,0.275
+          - 0.275,0.525
+        density: 20 # derived from base_item
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2

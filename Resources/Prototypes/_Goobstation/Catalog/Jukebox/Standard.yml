@@ -330,3 +330,321 @@
   name: mrjajkes - One Against All
   path:
     path: /Audio/StationEvents/one_against_all.ogg
+
+- type: jukebox
+  id: voided
+  name: Ramli - Voided
+  path:
+    path: /Audio/_Soton/Jukebox/Voided.ogg
+
+- type: jukebox
+  id: hopeful
+  name: Ramli - Hopeful
+  path:
+    path: /Audio/_Soton/Music/Hopeful.ogg
+
+- type: jukebox
+  id: owl
+  name: Ramli - Owl
+  path:
+    path: /Audio/_Soton/Jukebox/Owl.ogg
+
+- type: jukebox
+  id: tear_of_veil
+  name: Bolgarich - Tear Of Veil
+  path:
+    path: /Audio/_Soton/Jukebox/Tear_of_veil.ogg
+
+- type: jukebox
+  id: weightlessness
+  name: Ramli - Weightlessness
+  path:
+    path: /Audio/_Soton/Jukebox/Weightlessness.ogg
+
+- type: jukebox
+  id: taypan
+  name: Bolgarich - Battle For Taypan
+  path:
+    path: /Audio/_Soton/Jukebox/Taypan.ogg
+
+- type: jukebox
+  id: seven_summer_days
+  name: April Rain - Seven Summer Days
+  path:
+    path: /Audio/_Soton/Jukebox/Seven_summer_days.ogg
+
+- type: jukebox
+  id: flames
+  name: Ramli - Flames
+  path:
+    path: /Audio/_Soton/Jukebox/Flames.ogg
+
+- type: jukebox
+  id: monument
+  name: Six Umbrellas - Monument
+  path:
+    path: /Audio/_Soton/Jukebox/Monument.ogg
+
+- type: jukebox
+  id: across_the_void
+  name: Outer - Across The Void
+  path:
+    path: /Audio/_Soton/Jukebox/Across_the_void.ogg
+
+- type: jukebox
+  id: my_silent_angel
+  name: April Rain - My Silent Angel
+  path:
+    path: /Audio/_Soton/Jukebox/My_silent_angel.ogg
+
+- type: jukebox
+  id: nordic
+  name: Outer - Nordic
+  path:
+    path: /Audio/_Soton/Jukebox/Nordic.ogg
+
+- type: jukebox
+  id: hackers
+  name: Carl Casey - Hackers
+  path:
+    path: /Audio/_Soton/Jukebox/Hackers.ogg
+
+- type: jukebox
+  id: my_castle_town
+  name: Toby Fox - My Castle Town
+  path:
+    path: /Audio/_Soton/Music/Delta_My_Castle_Town.ogg
+
+- type: jukebox
+  id: neverending_night
+  name: Toby Fox - Neverending Night
+  path:
+    path: /Audio/_Soton/Music/Delta_Neverending_Night.ogg
+
+- type: jukebox
+  id: retribution
+  name: Undertale Yellow - Retribution
+  path:
+    path: /Audio/_Soton/Music/Under_Yellow_Retribution.ogg
+
+- type: jukebox
+  id: remedy
+  name: Undertale Yellow - Remedy
+  path:
+    path: /Audio/_Soton/Music/Under_Yellow_Remedy.ogg
+
+- type: jukebox
+  id: universal_collapse
+  name: DM DOKURO - Universal Collapse
+  path:
+    path: /Audio/_Soton/Music/Universal_Collapse.ogg
+
+- type: jukebox
+  id: roar_of_the_jungle_dragon
+  name: DM DOKURO - Roar Of The Jungle Dragon
+  path:
+    path: /Audio/_Soton/Music/Roar_Of_The_Jungle_Dragon.ogg
+
+- type: jukebox
+  id: finale
+  name: Toby Fox - Finale
+  path:
+    path: /Audio/_Soton/Music/Under_Finale.ogg
+
+- type: jukebox
+  id: bergentruckung
+  name: Toby Fox - Bergentruckung
+  path:
+    path: /Audio/_Soton/Music/Under_Bergentruckung.ogg
+
+- type: jukebox
+  id: lumiere
+  name: Expedition 33 - Lumiere
+  path:
+    path: /Audio/_Soton/Music/Expedition_33_Lumiere.ogg
+
+- type: jukebox
+  id: disposal_unit
+  name: Imperial Mix - Disposal Unit
+  path:
+    path: /Audio/_Soton/Music/Disposal_Unit.ogg
+
+- type: jukebox
+  id: doroga
+  name: Auktyon - Doroga
+  path:
+    path: /Audio/_Soton/Music/Auktyon_Doroga.ogg
+
+- type: jukebox
+  id: ruder_buster
+  name: Toby Fox - Ruder Buster
+  path:
+    path: /Audio/_Soton/Music/Delta_Ruder_Buster.ogg
+
+- type: jukebox
+  id: kaizo
+  name: Gaster - Kaizo
+  path:
+    path: /Audio/_Soton/Music/Gaster_Kaizo.ogg
+
+- type: jukebox
+  id: color_your_night
+  name: Persona 3 - Color Your Night
+  path:
+    path: /Audio/_Soton/Music/Persona_Color_Your_Night.ogg
+
+- type: jukebox
+  id: time_to_make_history
+  name: Persona 4 - Time To Make History
+  path:
+    path: /Audio/_Soton/Music/Persona_Time_To_Make_History.ogg
+
+- type: jukebox
+  id: une_vie_a_taimer
+  name: Expedition 33 - Une Vie A Taimer
+  path:
+    path: /Audio/_Soton/Music/Expedition_33_Une_Vie_A_Taimer.ogg
+
+- type: jukebox
+  id: glaza
+  name: Auktyon - Glaza
+  path:
+    path: /Audio/_Soton/Music/Auktyon_Glaza.ogg
+
+- type: jukebox
+  id: espada
+  name: Bleach - Clavar La Espada
+  path:
+    path: /Audio/_Soton/Music/Bleach_Clavar_La_Espada.ogg
+
+- type: jukebox
+  id: precipice
+  name: Bleach - On The Precipice Of Defeat
+  path:
+    path: /Audio/_Soton/Music/Bleach_On_The_Precipice.ogg
+
+- type: jukebox
+  id: antimatter
+  name: Plamenev - Antimatter
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Antimatter.ogg
+
+- type: jukebox
+  id: otryad
+  name: Plamenev - Squad Didnt Notice Loss Of A Fighter
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Otryad.ogg
+
+- type: jukebox
+  id: girl
+  name: Plamenev - Girl That Steals Dreams
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Girl.ogg
+
+- type: jukebox
+  id: hero_with_thousand_faces
+  name: Plamenev - Hero With Thousand Faces
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Hero_With_Thousand_Faces.ogg
+
+- type: jukebox
+  id: hey_deadman
+  name: Plamenev - Hey Deadman Wake Up
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Hey_Deadman.ogg
+
+- type: jukebox
+  id: last_day
+  name: Plamenev - Last Day
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Last_Day.ogg
+
+- type: jukebox
+  id: night_before_battle
+  name: Plamenev - Night Before Battle
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Night_Before_Battle.ogg
+
+- type: jukebox
+  id: russian
+  name: Plamenev - Russian Not Defeated
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Russian.ogg
+
+- type: jukebox
+  id: soldiers
+  name: Plamenev - Soldiers Are Not born
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Soldiers.ogg
+
+- type: jukebox
+  id: stars
+  name: Plamenev - Going To The Stars
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Stars.ogg
+
+- type: jukebox
+  id: step_into_the_darkness
+  name: Plamenev - Step Into The Darkness
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Step_Into_The_Darkness.ogg
+
+- type: jukebox
+  id: veteran_squads
+  name: Plamenev - Veteran Squads
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Veteran_Squads.ogg
+
+- type: jukebox
+  id: authority
+  name: Plamenev - Respect Our Authority
+  path:
+    path: /Audio/_Soton/Music/Plamenev_Vlast.ogg
+
+- type: jukebox
+  id: bird
+  name: Auktyon - Bird
+  path:
+    path: /Audio/_Soton/Music/Auktyon_Bird.ogg
+
+- type: jukebox
+  id: i_will_never_die
+  name: Plamenev - I Will Never Die
+  path:
+    path: /Audio/_Soton/Music/Plamenev_I_Will_Never_Die.ogg
+
+- type: jukebox
+  id: all_my_life
+  name: Plamenev - All My Life
+  path:
+    path: /Audio/_Soton/Music/Plamenev_All_My_Life.ogg
+
+- type: jukebox
+  id: versus
+  name: Ultrakill - Versus
+  path:
+    path: /Audio/_Soton/Music/Ultrakill_Versus.ogg
+
+- type: jukebox
+  id: never_fade_away
+  name: Cyberpunk 2077 - Never Fade Away
+  path:
+    path: /Audio/_Soton/Music/Cyberpunk_Never_Fade_Away.ogg
+
+- type: jukebox
+  id: the_rebel_path
+  name: Cyberpunk 2077 - The Rebel Path
+  path:
+    path: /Audio/_Soton/Music/Cyberpunk_The_Rebel_Path.ogg
+
+- type: jukebox
+  id: whos_ready_for_tomorrow
+  name: Cyberpunk 2077 - Whos Ready For Tomorrow
+  path:
+    path: /Audio/_Soton/Music/Cyberpunk_Whos_Ready_For_Tomorrow.ogg
+
+- type: jukebox
+  id: i_really_want_to_stay_at_your_house
+  name: Cyberpunk 2077 - I Realy Want To Stay At Your House
+  path:
+    path: /Audio/_Soton/Music/Cyberpunk_I_Really_Want_To_Stay_At_Your_House.ogg

@@ -43,9 +43,11 @@
         - type: StationJobs
           availableJobs:
             NanotrasenRepresentative: [ 1, 1 ] # Goobstation
+            AgentCrimsonLily: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ] # Goobstation
             Captain: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
+            SecurityKnight: [ 1, 1 ]
             SecurityOfficer: [ 1, 2 ]
             CargoTechnician: [ 1, 1 ]
             SalvageSpecialist: [ 1, 2 ]

@@ -1,8 +1,32 @@
 
 - type: reagent
   id: LumaEssence
-  name: Люма-эссенция
+  name: Люма-Аурит
   desc: Это жидкая Люма энергия, или же эссенция жидкого света. Где вы нашли ее?
-  flavor: как кусочек реальности
+  flavor: "как кусочек реальности"
   color: "#ecbf29"
   physicalDesc: первозданное
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:SuppressPain
+        amount: 3
+        time: 20
+      - !type:HealthChange # Goobstation - Make Omnizine great again!!!!!!!
+        damage:
+          types: # Goobstation change, Healthchange needs types or groups and groups fuck up the math for some reason and split the groups into types anyway
+            Heat: -5 # Goob change from group to types
+            Shock: -5 # Goob change from group to types
+            Cold: -5 # Goob change from group to types
+            Caustic: -5 # Goob change from group to types
+            Poison: -5 # Goob change from group to types
+            Radiation: -5 # Goob change from group to types
+            Asphyxiation: -5 # Goob change from group to types
+            Bloodloss: -5 # Goob change from group to types
+            Blunt: -5 # Was 2, Buffed due to limb damage changes(GoobStation)
+            Slash: -5 # Was 2, Buffed due to limb damage changes(GoobStation)
+            Piercing: -5 # Was 2, Buffed due to limb damage changes(GoobStation)
+      - !type:ImmunityModifier #Goobstation
+        gainRateModifier: 0.0011 #3x stronger than Immurin
+        strengthModifier: 0.0088888888888 #Twice as strong
+        statusLifetime: 5

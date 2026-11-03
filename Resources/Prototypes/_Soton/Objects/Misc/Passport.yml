@@ -1,0 +1,166 @@
+- type: entity
+  name: Паспорт
+  parent: BaseItem
+  id: BasePassport
+  abstract: true
+  description: Паспорт, удостоверяющий личность и национальность существа.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_ussp_closed
+      map: [ "base" ]
+  - type: Item
+    size: Small
+  - type: Appearance
+  - type: ToggleAnimation
+    toggleOffTime: 0
+    toggleOnTime: 0
+  - type: ItemToggle
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_ussp_open }
+          Off: { state: passport_ussp_closed }
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/book_pickup.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/book_drop.ogg
+      params:
+        volume: -4
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Goobstation/Items/handling/book_drop.ogg
+      params:
+        volume: -4
+
+- type: entity
+  id: PassportUSSP
+  name: Паспорт СССП
+  parent: BasePassport
+  description: Официальный документ, удостоверяющий личность гражданина Союза Советских Социалистических Планет. Предписывает уважать труд, порядок и интересы Союза.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_ussp_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_ussp_open }
+          Off: { state: passport_ussp_closed }
+
+- type: entity
+  id: PassportTSF
+  name: Паспорт ТСФ
+  parent: BasePassport
+  description: Официальный паспорт гражданина Транс-Солнечной Федерации. Подтверждает личность и статус владельца, давая ему права на защиту и покровительство федеральных законов.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_tsf_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_tsf_open }
+          Off: { state: passport_tsf_closed }
+
+- type: entity
+  id: PassportValyrian
+  name: Паспорт Валирийской Федерации
+  parent: BasePassport
+  description: Официальный документ гражданина сплочённой Валирийской Федерации. Подтверждает принадлежность к государству и право пользоваться ее защитой и привилегиями.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_valyrian_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_valyrian_open }
+          Off: { state: passport_valyrian_closed }
+
+- type: entity
+  id: PassportICU
+  name: Паспорт СНК
+  parent: BasePassport
+  description: Официальный документ, показывающий принадлежность к Союзу Независимых Колоний. Дающий ему права на использование социальных институтов государства.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_icu_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_icu_open }
+          Off: { state: passport_icu_closed }
+
+- type: entity
+  id: PassportMage
+  name: Паспорт Конфедерации Магов
+  parent: BasePassport
+  description: Официальный паспорт, подтверждающий личность гражданина Конфедерации Магов. Инкрустирован парой драгоценных камней и позволяет бесприпятственно путешествовать почти в любое государство.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_mage_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_mage_open }
+          Off: { state: passport_mage_closed }
+
+- type: entity
+  id: PassportEmpire
+  name: Паспорт Империи
+  parent: BasePassport
+  description: Официальный паспорт гражданина Великой Империи. Выдается в палате Императора и показывает что вы гражданин Великой Империи.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_empire_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_empire_open }
+          Off: { state: passport_empire_closed }
+
+- type: entity
+  id: PassportHirsari
+  name: Паспорт Королевства Хирсари
+  parent: BasePassport
+  description: Официальный паспорт гражданина Королевства Хирсари. На обложке красуются красивые иероглифы. Считается официальным документом, делающим владельца гражданином Королевства Хирсари.
+  components:
+  - type: Sprite
+    sprite: _Soton/Objects/Misc/Passport.rsi
+    layers:
+    - state: passport_hirsari_closed
+      map: [ "base" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleAnimationVisuals.ToggleState:
+        base:
+          On: { state: passport_hirsari_open }
+          Off: { state: passport_hirsari_closed }

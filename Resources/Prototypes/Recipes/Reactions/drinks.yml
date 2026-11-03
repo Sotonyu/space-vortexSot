@@ -1362,6 +1362,54 @@
     XenoBasher: 3
 
 - type: reaction
+  id: OilyOaf
+  reactants:
+    Ale:
+      amount: 2
+    CoffeeLiqueur:
+      amount: 1
+    Cognac:
+      amount: 1
+  products:
+    OilyOaf: 4
+
+- type: reaction
+  id: BlackoutStout
+  reactants:
+    ElectricShark:
+      amount: 1
+    BacchusBlessing:
+      amount: 2
+    B52:
+      amount: 1
+  products:
+    BlackoutStout: 4
+
+- type: reaction
+  id: ArkenStout
+  reactants:
+    Gildlager:
+      amount: 1
+    Patron:
+      amount: 1
+    Ice:
+      amount: 2
+  products:
+    ArkenStout: 4
+
+- type: reaction
+  id: Silverhand
+  reactants:
+    Tequila:
+      amount: 2
+    Beer:
+      amount: 1
+    CapsaicinOil:
+      amount: 1
+  products:
+    Silverhand: 4
+
+- type: reaction
   id: HotRamen
   minTemp: 323.15
   reactants:
